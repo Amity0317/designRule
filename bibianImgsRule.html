@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>RWD</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/samestyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <script type="text/javascript" src="js/header.js"></script>
+
+    <style type="text/css">
+      .step {
+        background-color: #666;
+        padding: 0.35em 0.65em;
+        font-size: 0.75em;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 0.25rem;
+      }
+
+      .a1 {
+        color: #352e2d;
+        font-size: 20px;
+        font-family: Verdana, "微軟正黑體", sans-serif;
+        /*text-indent:2em;*/
+        line-height: 32px;
+        letter-spacing: 1.8px;
+        padding: 0 44px;
+      }
+
+      .a2 {
+        color: #352e2d;
+        font-size: 20px;
+        font-family: Verdana, "微軟正黑體", sans-serif;
+        /*text-indent:2em;*/
+        line-height: 32px;
+        letter-spacing: 1.8px;
+        padding: 0 74px;
+      }
+
+      .d {
+        color: #a76507;
+        /* font-size: 22px; */
+        font-family: Verdana, "微軟正黑體", sans-serif;
+        font-weight: bold;
+        text-indent: 2em;
+      }
+      .section5 {
+        background-color: rgb(250, 234, 215);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="headerintop">
+      <!-- bootstrap5框架概念 section1 -->
+      <section class="section1">
+        <div class="container d-flex justify-content-center">
+          <div class="row w-100 py-5">
+                <br>
+                <br>
+                  <h3>＊使用統一命名，方便與切圖者溝通</h3>
+                  <br>
+                  <h3>＊命名嚴格禁止空格，可使用“＿”取代</h3>
+                  <br>
+                  <br>
+            <p class="d py-3 fs-3">
+              ★ 資料命名方式：
+            </p>
+            <p class="a2 pb-2">
+              <i class="step"> ● 方式一<br /> </i>
+              <span class="ps-4"
+                >找到區塊 => 資料夾以區塊命名section(簡化為sec)<br
+              /></span>
+              <i class="step"> ● 範例<br /> </i>
+              <img class="ps-4 w-100" src="designer/editor_01.png" alt="" />
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------ -->
+      <section class="section2">
+        <div class="container d-flex justify-content-center">
+          <div class="row w-100 py-5">
+            <p class="d py-3 fs-3">
+              ★ 圖片命名方式：
+            </p>
+            <p class="a2 pb-2">
+              <i class="step"> ● 方式一<br /> </i>
+              <span class="ps-4"
+                >進入區塊資料夾 =>
+                圖片命名方式:"<ins>區塊sec</ins>"+"<ins>有意義的名詞</ins>"+"<ins>_數量</ins>"+"<ins>副檔名</ins>"<br
+              /></span>
+              <i class="step"> ● 範例<br /> </i>
+              <img class="ps-4 w-100" src="designer/editor_02_1_1.png" alt="" />
+              <i class="step"> ● 範例<br /> </i>
+              <img class="ps-4 w-100" src="designer/editor_02_1_2.png" alt="" />
+              <i class="step"> ● 範例<br /> </i>
+              <img class="ps-4 w-100" src="designer/editor_02_1_3.png" alt="" />
+
+              <i class="step"> ● 方式二<br /> </i>
+              當桌機與手機圖片不同時:<br />
+              <span class="ps-4"
+                >▲
+                桌機圖片命名方式:"<ins>desk</ins>"+"<ins>區塊sec</ins>"+"<ins>有意義的名詞</ins>"+"<ins>_數量</ins>"+"<ins>副檔名</ins>"<br
+              /></span>
+              <span class="ps-4"
+                >▲
+                手機圖片命名方式:"<ins>mobile</ins>"+"<ins>區塊sec</ins>"+"<ins>有意義的名詞</ins>"+"<ins>_數量</ins>"+"<ins>副檔名</ins>"<br
+              /></span>
+              <i class="step"> ● 範例<br /> </i>
+              <img class="ps-4 w-100" src="designer/editor_02_2.png" alt="" />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <section class="section3">
+        <div class="container d-flex justify-content-center">
+          <div class="row w-100 py-5">
+            <p class="d py-3 fs-3">
+              ★ 何謂“有意義的名詞”命名：
+            </p>
+            <p class="a2 pb-2">
+              <i class="step"> ● 標題-範例<br /> </i>
+              <span class="ps-4">標題=>title 、 副標題=>subtitle</span><br />
+              <i class="step"> ● 按鈕-範例<br /> </i>
+              <span class="ps-4">按鈕 => button</span><br />
+              <i class="step"> ● 圖片-範例<br /> </i>
+              <span class="ps-4"
+                >背景圖=>bg 、 插圖=>pic 、 標籤圖=>icon 、 20X20px小圖=>stick
+                ...</span
+              ><br />
+              <i class="step"> ● 橫幅-範例<br /> </i>
+              <span class="ps-4">180橫幅=>180bn 、 425橫幅=>425bn</span><br />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <section class="section4">
+        <div class="container d-flex justify-content-center">
+          <div class="row w-100 py-5">
+            <p class="d py-3 fs-3">
+              ★ 副檔名命名方式：
+            </p>
+            <p class="a2 pb-2">
+              <span
+                >※注意:需統一包含大小寫</span
+              >
+            </p>
+            <p class="a2 pb-2">
+                    <span
+                      >※使用“.gif”及“.png”為主，不使用“.jpeng”!!</span
+                    >
+                  </p>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------ -->
+      <!-- <section class="section5">
+        <div class="container d-flex justify-content-center">
+          <div class="row w-100 py-5">
+            <p class="d py-3 fs-3">
+              ★ 提供色票!!
+            </p>
+            <p class="a2 pb-2">
+              <span>※excel檔，提供色碼!!!!</span>
+            </p>
+          </div>
+        </div>
+      </section> -->
+    </div>
+  </body>
+</html>
