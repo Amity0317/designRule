@@ -1,267 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <title>RWD</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"
-    ></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <title>RWD</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/samestyle.css" />
-    <link rel="stylesheet" type="text/css" href="css/header.css" />
-    <script type="text/javascript" src="js/header.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/samestyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/header.css" />
+        <script type="text/javascript" src="js/header.js"></script>
 
-    <style type="text/css">
-      .step {
-        background-color: #666;
-        padding: 0.35em 0.65em;
-        font-size: 0.75em;
-        font-weight: 700;
-        line-height: 1;
-        color: #fff;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: baseline;
-        border-radius: 0.25rem;
-      }
+        <style type="text/css">
+        body h3,body p{
+          font-family:"Noto Sans TC", "微軟正黑體";
+        }
+            .step {
+                background-color: #666;
+                padding: 0.35em 0.65em;
+                font-size: 0.75em;
+                font-weight: 700;
+                line-height: 1;
+                color: #fff;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: baseline;
+                border-radius: 0.25rem;
+            }
 
-      .a1 {
-        color: #352e2d;
-        font-size: 20px;
-        font-family: Verdana, "微軟正黑體", sans-serif;
-        /*text-indent:2em;*/
-        line-height: 32px;
-        letter-spacing: 1.8px;
-        padding: 0 44px;
-      }
+            .a1 {
+                color: #352e2d;
+                font-size: 20px;
+                font-family: Verdana, '微軟正黑體', sans-serif;
+                /*text-indent:2em;*/
+                line-height: 32px;
+                letter-spacing: 1.8px;
+                padding: 0 44px;
+            }
 
-      .a2 {
-        color: #352e2d;
-        font-size: 20px;
-        font-family: Verdana, "微軟正黑體", sans-serif;
-        /*text-indent:2em;*/
-        line-height: 32px;
-        letter-spacing: 1.8px;
-        padding: 0 74px;
-      }
+            .a2 {
+                color: #352e2d;
+                font-size: 20px;
+                font-family: Verdana, '微軟正黑體', sans-serif;
+                /*text-indent:2em;*/
+                line-height: 32px;
+                letter-spacing: 1.8px;
+                padding: 0 74px;
+            }
 
-      .d {
-        color: #a76507;
-        /* font-size: 22px; */
-        font-family: Verdana, "微軟正黑體", sans-serif;
-        font-weight: bold;
-        text-indent: 2em;
-      }
-      .section5 {
-        background-color: rgb(250, 234, 215);
-      }
-    </style>
-  </head>
+            .d {
+                color: #a76507;
+                /* font-size: 22px; */
+                font-family: Verdana, '微軟正黑體', sans-serif;
+                font-weight: bold;
+                /* text-indent: 2em; */
+            }
+            .section5 {
+                background-color: rgb(250, 234, 215);
+            }
 
-  <body>
-    <div id="headerintop">
-      <!-- bootstrap5框架概念 section1 -->
-      <section class="section1">
-        <div class="container d-flex justify-content-center">
-          <div class="row w-100 py-5">
-                <br>
-                <br>
-                  <h3>＊提供參考範例</h3>
-                  <br>
-                  <!-- <h3>＊命名嚴格禁止空格，可使用“＿”取代</h3>
+            /* ------------------------------------------- */
+            h2 {
+              font-size: 34px;
+              line-height: 1.4;
+              font-weight: 600;
+            }
+            p {
+              font-size: 18px;
+              line-height: 1.8;
+            }
+            @media screen and (min-width: 768px) {
+              h2 {
+                font-size: 48px;
+                line-height: 1.4;
+              }
+              p {
+                font-size: 22px;
+                line-height: 2.2;
+              }
+            }
+            /* ------------------------------------------- */
+            .hotgood_wrap {
+              padding-bottom: 52px;
+            }
+            .hotgood_wrap a .shopgood {
+              position: relative;
+              color: #000000;
+              background: #ffffff;
+            }
+            .hotgood_wrap a .shopgood h3 {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 1.4;
+            }
+            .hotgood_wrap a .shopgood p{
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 1.4;
+            }
+            .hotgood_wrap a .shopgood .goodphoto {
+              max-height: 348px;
+              max-width: 348px;
+              width: 100%;
+              overflow: hidden;
+            }
+            .hotgood_wrap a .shopgood .goodphoto img {
+              width: 100%;
+            }
+            .hotgood_wrap a .shopgood .goodtitle{
+              padding: 10px 10px 0px 10px;
+            }
+            .hotgood_wrap a .shopgood .gooddesc {
+              min-height: 70px;
+              padding: 10px 10px 10px 10px;
+            }
+            @media screen and (min-width: 768px) {
+              .hotgood_wrap a .shopgood h3 {
+                font-size: 26px;
+                line-height: 1.4;
+              }
+              .hotgood_wrap a .shopgood p {
+                font-size: 16px;
+                line-height: 1.4;
+              }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="headerintop">
+            <!-- bootstrap5框架概念 section1 -->
+            <section class="section1">
+                <div class="container d-flex justify-content-center">
+                    <div class="row w-100 py-5">
+                        <br />
+                        <br />
+                        <h3>＊提供參考範例</h3>
+                        <br />
+                        <!-- <h3>＊命名嚴格禁止空格，可使用“＿”取代</h3>
                   <br>
                   <br> -->
-            <p class="d py-3 fs-3">
-              ★ Zeplin 細節注意：
-            </p>
-            <p class="a2 pb-2">
-              <i class="step"> ● 第一項<br /> </i>
-              <span class="ps-4"
-                >將圖片、元件等資訊呈現同一頁，不存元件在其他pages<br
-              /></span>
-              <img class="ps-4 w-100" src="designer/zepline_01.png" alt="" />
-              <br>
-              <br>
-              <i class="step"> ● 第二項<br /> </i>
-              <span class="ps-4">解鎖資料：</span><br>
-              <span class="ps-4">1.圖片部分-可讓切版人員下載及編輯圖檔名稱</span><br>
-              <span class="ps-4">2.文字部分-可讓切版人員copy內文</span>
-              <img class="ps-4 w-100" src="designer/zepline_02.png" alt="" />
-              <br>
-              <br>
-              <i class="step"> ● 第三項<br /> </i>
-              <span class="ps-4">區分哪些是可切出的樣式(出圖前與切版者溝通)</span><br>
-              <span class="ps-4">不可切出的圖，範例：</span>
-              <img class="ps-4 w-40 d-block" src="designer/zepline_03.png" alt="" />
-              <br>
-              <br>
-              <i class="step"> ● 第四項<br /> </i>
-              <span class="ps-4">假文或假圖提醒切版者，或是示意<u>一致性的文或圖</u>切版者即可知道:</span><br>
-              <img class="ps-4 w-60 d-block" src="designer/zepline_04.png" alt="" />
-              <br>
-              <br>
-              <i class="step"> ● 第五項<br /> </i>
-              <span class="ps-4">連結位置的資訊提供</span><br>
+                        <p class="d py-3 fs-3">★ BBC store 標準字 參考：</p>
+                        <p class="pb-2">
+                            <i class="step"> ● 滿版<br /> </i>
+                        </p>
+                        <h2 class="py-2 py-md-3">我是標題<br />桌機:字級48px;行高:1.4<br />手機:字級34px;行高:1.4</h2>
+                        <p class="py-2 py-md-3">
+                            我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文<br />
+                            桌機:字級22px;行高2.2;<br />手機:字級18px;行高1.8;
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-            </p>
-          </div>
+            <section class="section2">
+                <div class="container d-flex justify-content-center">
+                    <div class="row w-100 py-5">
+                        <p class="pb-2">
+                            <i class="step"> ● 商品區<br /> </i>
+                            <ul class="hotgood_wrap d-flex flex-wrap">
+                              <li class="shopgood_box col-6 col-md-3 mb-3 mb-md-5">
+                                <div class="w-95 m-auto">
+                                    <a href="" target="_blank">
+                                        <div class="shopgood">
+                                            <div class="goodphoto">
+                                                <img src="https://s3-ap-northeast-1.amazonaws.com/ac.ezimport.co.jp/image/bbcstore/v1/coet/images/hotgood_02.png" alt="">
+                                            </div>
+                                            <h3 class="goodtitle">我是商品名稱<br>桌機:字級26px;行高:1.4<br />手機:字級18px;行高:1.4</h3>
+                                            <p class="gooddesc">
+                                              我是商品內文我是商品內文我是商品內<br>
+                                              桌機:字級16px;行高1.4;<br />手機:字級16px;行高1.4;
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="shopgood_box col-6 col-md-3 mb-3 mb-md-5">
+                              <div class="w-95 m-auto">
+                                  <a href="" target="_blank">
+                                      <div class="shopgood">
+                                          <div class="goodphoto">
+                                              <img src="https://s3-ap-northeast-1.amazonaws.com/ac.ezimport.co.jp/image/bbcstore/v1/coet/images/hotgood_02.png" alt="">
+                                          </div>
+                                          <h3 class="goodtitle">經典手提包</h3>
+                                          <p class="gooddesc">寬44厘米x高27厘米</p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </li>
+                              <li class="shopgood_box col-6 col-md-3 mb-3 mb-md-5">
+                                <div class="w-95 m-auto">
+                                    <a href="" target="_blank">
+                                        <div class="shopgood">
+                                            <div class="goodphoto">
+                                                <img src="https://s3-ap-northeast-1.amazonaws.com/ac.ezimport.co.jp/image/bbcstore/v1/coet/images/hotgood_02.png" alt="">
+                                            </div>
+                                            <h3 class="goodtitle">經典手提包</h3>
+                                            <p class="gooddesc">寬44厘米x高27厘米</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="shopgood_box col-6 col-md-3 mb-3 mb-md-5">
+                              <div class="w-95 m-auto">
+                                  <a href="" target="_blank">
+                                      <div class="shopgood">
+                                          <div class="goodphoto">
+                                              <img src="https://s3-ap-northeast-1.amazonaws.com/ac.ezimport.co.jp/image/bbcstore/v1/coet/images/hotgood_02.png" alt="">
+                                          </div>
+                                          <h3 class="goodtitle">經典手提包</h3>
+                                          <p class="gooddesc">寬44厘米x高27厘米</p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </li>
+                          </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
-      <!-- ------------------------------------------------------------------ -->
-      <section class="section2">
-        <div class="container d-flex justify-content-center">
-          <div class="row w-100 py-5">
-            <p class="d py-3 fs-3">
-              ★ 專案開啟：
-            </p>
-            <p class="a2 pb-2">
-              <i class="step"> ● 專案資訊<br /> </i><!-- \\BibianNAS\BibianNAS\專案資訊\bbc\製作中\ -->
-              <br>
-              <span class="ps-4">1.網頁路徑名稱（推薦使用NAS，開啟專案資料夾，並使用資料夾名稱作為網頁路徑）</span>
-              <img class="ps-4 w-70" src="designer/file_01.png" alt="" /><br>
-              <span class="ps-4">2.網頁title等內頁資訊</span><br>
-              <img class="ps-4 w-70" src="designer/file_02.png" alt="" /><br>
-              <span class="ps-4">備註: meta-inf.docx 內容</span><br>
-              <div style="font-size: 18px;line-height: 1.5;background: #fff;">
-                  <xmp>
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>比比昂隨選即買 - Coet日本知名配件品牌,職人手工皮革專賣店,日本代購一件下單,宅在家等貨到</title>
-<meta name="description" content="PChome網路家庭子公司-比比昂 日本代購代標第一品牌,可刷卡免海外手續費,海外購物享五大保證消費更安心！">
-<meta name="keywords" content="日本包,日本皮件,日本配件,日本代購,日本代標,日本雅虎拍賣,PChome國際代購,比比昂代購讓您歡樂淘寶買對海外商品">
-<meta property="og:description" content="PChome網路家庭子公司-比比昂 日本代購代標第一品牌,可刷卡免海外手續費,海外購物享五大保證消費更安心！">
-<meta property="og:title" content="比比昂隨選即買- Coet日本知名配件品牌,職人手工皮革專賣店">
-
-<meta property="og:site_name" content="比比昂 海外代購代標">
-<meta property="og:url" content="https://www.bibian.co.jp/bbcstore/coet/index.html">
-<meta property="og:image" content="https://s3-ap-northeast-1.amazonaws.com/ac.ezimport.co.jp/image/bbcstore/coet/images/og-coet.jpg">
-<meta property="og:type" content="website">
-                  </xmp>
-              </div>
-
-              <!-- <i class="step"> ● 範例<br /> </i>
-              <img class="ps-4 w-100" src="designer/editor_02_1_3.png" alt="" />
-
-              <i class="step"> ● 方式二<br /> </i>
-              當桌機與手機圖片不同時:<br />
-              <span class="ps-4"
-                >▲
-                桌機圖片命名方式:"<ins>desk</ins>"+"<ins>區塊sec</ins>"+"<ins>有意義的名詞</ins>"+"<ins>_數量</ins>"+"<ins>副檔名</ins>"<br
-              /></span>
-              <span class="ps-4"
-                >▲
-                手機圖片命名方式:"<ins>mobile</ins>"+"<ins>區塊sec</ins>"+"<ins>有意義的名詞</ins>"+"<ins>_數量</ins>"+"<ins>副檔名</ins>"<br
-              /></span>
-              <i class="step"> ● 範例<br /> </i>
-              <img class="ps-4 w-100" src="designer/editor_02_2.png" alt="" /> -->
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ------------------------------------------------------------------ -->
-      <section class="section3">
-        <div class="container d-flex justify-content-center">
-          <div class="row w-100 py-5">
-            <p class="d py-3 fs-3">
-              ★ 圖片更新方式：
-            </p>
-            <p class="a2 pb-2">
-              <i class="step"> ● 第一項<br /> </i>
-              <span class="ps-4">設計在"圖片更新"資料夾中建立需更新資料</span><br>
-              <img class="ps-4 w-60" src="designer/file_03.png" alt="" />
-              <br>
-              <br>
-              <i class="step"> ● 第二項<br /> </i>
-              <span class="ps-4">放入更新內容</span><br>
-              <img class="ps-4 w-60" src="designer/file_04.png" alt="" />
-              <br>
-              <br>
-              <i class="step"> ● 第三項<br /> </i>
-              <span class="ps-4">通知切版(提供路徑)，切版者完成後放入"待檢查"資料夾中，行銷確認後自行刪除"待檢查"資料</span><br>
-              <img class="ps-4 w-80" src="designer/file_05.png" alt="" />
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- ------------------------------------------------------------------ -->
-      <!-- <section class="section3">
-        <div class="container d-flex justify-content-center">
-          <div class="row w-100 py-5">
-            <p class="d py-3 fs-3">
-              ★ 何謂“有意義的名詞”命名：
-            </p>
-            <p class="a2 pb-2">
-              <i class="step"> ● 標題-範例<br /> </i>
-              <span class="ps-4">標題=>title 、 副標題=>subtitle</span><br />
-              <i class="step"> ● 按鈕-範例<br /> </i>
-              <span class="ps-4">按鈕 => button</span><br />
-              <i class="step"> ● 圖片-範例<br /> </i>
-              <span class="ps-4"
-                >背景圖=>bg 、 插圖=>pic 、 標籤圖=>icon 、 20X20px小圖=>stick
-                ...</span
-              ><br />
-              <i class="step"> ● 橫幅-範例<br /> </i>
-              <span class="ps-4">180橫幅=>180bn 、 425橫幅=>425bn</span><br />
-            </p>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- ------------------------------------------------------------------ -->
-      <!-- <section class="section4">
-        <div class="container d-flex justify-content-center">
-          <div class="row w-100 py-5">
-            <p class="d py-3 fs-3">
-              ★ 副檔名命名方式：
-            </p>
-            <p class="a2 pb-2">
-              <span
-                >※注意:需統一包含大小寫</span
-              >
-            </p>
-            <p class="a2 pb-2">
-                    <span
-                      >※使用“.gif”及“.png”為主，不使用“.jpeng”!!</span
-                    >
-                  </p>
-          </div>
-        </div>
-      </section> -->
-      <!-- ------------------------------------------------------------------ -->
-      <!-- <section class="section5">
-        <div class="container d-flex justify-content-center">
-          <div class="row w-100 py-5">
-            <p class="d py-3 fs-3">
-              ★ 提供色票!!
-            </p>
-            <p class="a2 pb-2">
-              <span>※excel檔，提供色碼!!!!</span>
-            </p>
-          </div>
-        </div>
-      </section> -->
-    </div>
-  </body>
+    </body>
 </html>
